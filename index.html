@@ -5,9 +5,98 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Holms Portfolio</title>
     </head>
+    <style>
+        body{
+            background-color:azure;
+        }
+        header{
+            background-color: aquamarine;
+        }
+        .flex_container{
+            display: flex;
+            margin: 50px;
+            align-content: center;
+        }
+        .table_style{
+            margin: 50px auto;
+        }
+        .list_style{
+            display: table;
+            margin: 0 auto;
+        }
+        .flex_row_center{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    </style>
+    <header>
+        <h1 style="text-align: center;">Holmos Portfolio</h1>
+    </header>
     <body>
-        <h1>Holmos Portfolio</h1>
-        <ol>
+        <div class="flex_container">
+            <img src="./assets/yunoc_profile_pic.jpg" alt="Picture of a red Elmolike Orc">
+            <p style="padding-left: 50px;">Holm Cramer<br> 
+            34 years old<br>
+            from Germany</p>
+        </div>
+        <h2 style="text-align: center; background-color:beige">Curriculum Vitae</h2>
+            <table class="table_style">
+                <tr>
+                    <th>Dates</th>
+                    <th>Occupation</th>
+                </tr>
+                <tr>
+                    <td>since 2023</td>
+                    <td>Career Conversion to become an Application Developer</td>
+                </tr>
+                <tr>
+                    <td>2019 - 2023</td>
+                    <td>Sabatical</td>
+                </tr>
+                <tr>
+                    <td>2015 - 2019</td>
+                    <td>Physics Student</td>
+                </tr>
+                <tr>
+                    <td>2013 - 2015</td>
+                    <td>Abitur Student</td>
+                </tr>
+                <tr>
+                    <td>2010 - 2013</td>
+                    <td>Apprenticeship to become a Chemical Process Technician</td>
+                </tr>
+            </table>
+        <h2 style="text-align: center; background-color:gainsboro">Skills</h2>
+            <table class="table_style">
+                <tr>
+                    <td>Java</td>
+                    <td>3 years</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>1 year</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>3 years</td>
+                </tr>
+                <tr>
+                    <td>HTML/CSS</td>
+                    <td>2 years</td>
+                </tr>
+                <tr>
+                    <td>PHP</td>
+                    <td>2 years</td>
+                </tr>
+                <tr>
+                    <td>Math/Physics Teaching</td>
+                    <td>3 years</td>
+                </tr>
+
+            </table>
+        <h2 style="text-align: center; background-color:bisque">My HTML/CSS/JS Intro Course Material</h2>
+        <ol class="list_style">
             <li><a href="./Quest_1_Heading/index.html">Quest - Headings</a></li>
             <li><a href="./Quest_2_Paragraph_Element/index.html">Quest - Paragraph Elements</a></li>
             <li><a href="./Quest_3_Void_Elements/index.html">Quest - Void Elements</a></li>
@@ -17,6 +106,11 @@
             <li><a href="./Quest_7_Image_Elements/index.html">Quest - Image Elements</a></li>
             <li><a href="./Quest_8_Webpages/index.html">Quest - Webpages</a></li>
         </ol>
-        <a href="./numbers_game/index.html">Number Guessing Game</a>
+        <br>
+        <a class="flex_row_center" href="./numbers_game/index.html">Number Guessing Game</a>
+        <br><br>
     </body>
+    <footer style="background-color: rgb(158, 206, 206); text-align:center">
+        <a href="">Contact Me</a>
+    </footer>
 </html>
