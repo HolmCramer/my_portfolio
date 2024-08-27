@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers Game</title>
+    <script type="text/javascript" src="./logic.js"></script>
+  </head>
+  <body>
+    <style>
+      body {
+        background-image: url('pi.jpg');
+        height: 100vh;
+      }
+    </style>
+    <div style="display: flex; flex-direction: column; align-items: center; height: 100%;" >
+      <h1>Numbers Game</h1>
+      <div aria-label="Form">
+        <label for="number_guess">Number</label><br>
+        <input type="number" id="number_guess" name="number_guess"><br><br>
+        <input type="submit" value="Guess" onclick="compare_numbers(number_guess.value)">
+      </div>
+      <h2 id="guess_status">Guess a Number!</h2>
+    </div>
+  </body>
+</html>
